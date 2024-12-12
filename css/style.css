@@ -2,7 +2,7 @@
     --main-color:#d92123;
     --primary-text-color:#fff;
     --secondary-text-color: #191919;
-    --secondary-color:#868686;
+    --secondary-color:#969494;
     --tertiary-color:#eff3f4;
     --secondary-bg-color:#5c1011;
 }
@@ -58,13 +58,52 @@ img {
     color: var(--primary-text-color);
     /* muda a fonte de cor  */
     font-weight: bold;
+    margin-right: 2rem;
     padding: 1rem;
 }
+.banner.active{
+    opacity: 1; /* banner ativo é mostrado*/
 
+}
+
+.banner {
+    max-width: 45%;
+    opacity: 0;
+    padding: 4rem;
+    position: absolute;
+}
+.banner h2{
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    z-index: 2;
+    
+}
+.banner p{
+    font-size: 1.5rem;
+}
 .square{
     display: block;
     width: 150px;
     height: 150px;
     background-color: var(--main-color);
-
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    z-index: 1;
+}
+.dots{
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    bottom: 9rem;
+    left: 9rem;
+}
+.dot{
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+}
+.dot.active{
+    background-color: var(--secondary-bg-color);
 }
