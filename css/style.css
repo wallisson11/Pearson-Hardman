@@ -1,7 +1,7 @@
 :root {
     --main-color:#d92123;
     --primary-text-color:#fff;
-    --secondary-text-color: #191919;
+    --secondary-text-color:#191919;
     --secondary-color:#868686;
     --tertiary-color:#eff3f4;
     --secondary-bg-color:#5c1011;
@@ -22,8 +22,15 @@ img {
     width: 100%;
 }
 
-/* Id */
-#header {
+i {
+    background-color: var(--main-color);
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+/* id */
+#header{
     min-height: 90vh;
     background-image: url("../images/main_banner4.png");
     background-size: cover;
@@ -33,13 +40,14 @@ img {
 }
 
 #inner-header{
-    /* padrão é linha */
+    /* padrão linha */
     display: flex;
     /* alinhamento é horizontal, eixo x */
     justify-content: space-between;
     /* alinhamento vertical, eixo y */
     align-items: center;
 }
+
 #brand {
     background-color: var(--main-color);
     padding: 1rem;
@@ -47,16 +55,133 @@ img {
 
 #navbar {
     display: flex;
-    /* espaçamento */
     gap: 2rem;
-    /* aumenta a fonte */
     text-transform: uppercase;
     margin-right: 2rem;
 }
 
 #navbar a {
     color: var(--primary-text-color);
-    /* muda a fonte de cor  */
     font-weight: bold;
     padding: 1rem;
+}
+
+.banner.active{
+    opacity: 1; /* banner ativo é mostrado */
+}
+
+.banner{
+    max-width: 45%;
+    opacity: 0;
+    padding: 4rem;
+    position: absolute;
+}
+
+.banner h2{
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    z-index:2;
+}
+
+.banner p{
+    font-size: 1.5rem;
+}
+
+.square{
+    display:block;
+    width: 150px;
+    height: 150px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    z-index:1;
+}
+
+.dots{
+    display:flex;
+    gap:2rem;
+    position: absolute;
+    bottom: 9rem;
+    left:3rem;
+}
+
+.dot{
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+}
+
+.dot.active{
+    background-color: var(--secondary-bg-color);
+}
+
+#other-services{
+    width: 100%;
+    display: flex;
+    gap:2rem;
+    padding: 2rem;
+}
+
+.service{
+    position: relative;
+}
+
+.service i{
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+.service-info{
+    background-color: var(--tertiary-color);
+    padding: 2rem 1.4rem;
+    min-height: 250px;
+}
+
+.service h4{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+/* Sectio about - Sobre Nós */
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+#about-text{
+    background-image: url(../images/pattern.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    display: flex;
+    flex: 1 1 0;
+    /* flex: grow shrink basis */
+    /* grow - define quanto o elemento cresce em relação aos outros */
+    /* shrink -define o quanto ele encolhe quando não há espaço */
+    /* basis - define o tamanho inicial do elemento antes de aplicar o crescimento e encolhimento */
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    padding: 4rem 3rem;
+
+}
+
+#about-text .section-subtitle, 
+#about-text .section-title{
+    color: var (--primary-text-color)
+
+} 
+#about-text i {
+    background-color: transparent;
+
+}
+
+.about-description{
+    display: flex;
+    gap: 2rem;
 }
