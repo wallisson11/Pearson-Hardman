@@ -306,3 +306,56 @@ i {
 .author .author-job {
   color: var(--secondary-text-color);
 }
+
+#team h2 {
+  text-align: center; /* Centraliza o texto */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 3rem;
+}
+
+.break-line {
+  display: block;
+}
+
+
+#team span{
+  color: var(--main-color);
+
+}
+
+.employees {
+  display: flex;
+  justify-content: center; /* Centraliza os funcionários */
+  text-align: center; /* Centraliza o texto abaixo das imagens */
+}
+
+.employee {
+  display: flex;
+  flex-direction: column; /* Mantém o texto abaixo da imagem */
+  align-items: center; /* Centraliza tudo dentro do bloco */
+}
+
+.employee img {
+  flex: 1 1 0;
+  padding: 1.3rem;
+}
+
+.employee-name {
+  font-size: 16px;
+  font-weight: bold;
+  color:var(--main-color); /* Nome em vermelho */
+  margin-top: 10px;
+  text-transform: uppercase; /* Deixa o nome em caixa alta */
+}
+
+.employee-role {
+  font-size: 14px;
+  color:var(--secondary-text-color); /* Cor padrão para o cargo */
+ 
+}
+
+
+
