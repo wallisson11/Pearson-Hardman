@@ -505,14 +505,12 @@ i {
   flex-direction: column;
   padding: 4rem 2rem;
   transition: 0.4s;
-  z-index: 5;
- 
+  z-index: 1000; /* 1000 é o padrão do bootstrap */
 }
  
 #mobile-navbar.menu-active{
   left: 0;
 }
- 
  
 #mobile-navbar a{
   color: var(--primary-text-color);
@@ -531,8 +529,8 @@ i {
     overflow-x: hidden;
   }
   i {
-    padding: 1.5rem;
-    font-size: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
   }
   #navbar {
     display: none;
@@ -541,35 +539,31 @@ i {
   #close-menu {
     display: block;
   }
-
-  /* banner e texto do banner */
-  .banner{
+  /* Banner e texto do banner */
+  .banner {
     max-width: 100%;
     padding: 4rem 2rem;
-}
-.banner h2{
-  font-size: 3rem;
-}
-.banner p{
-  font-size: 1.2rem;
-}
-  /* Areas de Atuação */
-  .btn{
+  }
+  .banner h2 {
+    font-size: 3rem;
+  }
+  .banner p {
+    font-size: 1.2rem;
+  }
+  /* Áreas de atuação */
+  .btn {
     align-self: initial;
   }
-  .image-container{
-    flex: 1 1 0;
+  .image-container {
+    flex: 1 1 100%; /*flex-grow flex-shrink flex-basis */
   }
-  #other-services{
-    flex-wrap: wrap; /* quebra a linha */
+  #other-services {
+    flex-wrap: wrap;
   }
-
-  /* Sobre nós */
-  #about {
-
-  }
-  #about-text,
-  #abaut-data {
+ 
+  /* Sobre Nós */
+  #about,
+  #about-data {
     flex: 1 1 100%;
   }
   .about-description {
@@ -584,42 +578,69 @@ i {
     border: none;
     border-bottom: 1px solid var(--secondary-text-color);
   }
-  #about #about-data .data{
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid var(--secondary-text-color);
-  }
-
+ 
   /* Depoimentos */
   .text-container {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
   }
-
+ 
   /* Colaboradores */
   #team {
     margin-top: 2rem;
-    font-size: 2rem;
-
+  }
+  #team h2 {
+    font-size: 2.5rem;
   }
   .employees {
     flex-wrap: wrap;
   }
-
+ 
   /* Contato */
   #contact {
     padding-bottom: 0;
-
   }
   #contact-information {
     padding: 7rem 1rem;
   }
-  #contact-information. .form-control{
+  #contact-information .form-control {
     flex-direction: column;
-
-  } 
+  }
   #contact-information .btn {
     align-self: auto;
   }
+ 
+  /* Rodapé - Footer */
+ /* Rodapé - Footer */
+ 
+  #footer {
+    flex-wrap: wrap;
+  }
+ 
+  .contact-info,
+  .links-container {
+    width: 100%;
+  }
+ 
+  #footer i {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+ 
+  .footer-brand {
+    text-align: center;
+  }
+ 
+  .networks{
+    margin-bottom: 3rem;
+  }
+ 
+  .links-container{
+    margin-bottom: 1rem;
+  }
+ 
+  .links-container h4{
+    margin-bottom: 1.5rem;
+   
+  }
 }
-
