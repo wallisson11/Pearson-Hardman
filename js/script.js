@@ -42,37 +42,11 @@ menuBtn.addEventListener('click',(e) => {
 closemenuBtn.addEventListener('click',(e) => {
     menu.classList.remove('menu-active');
 });
- 
-// [menuBtn,closemenuBtn].forEach((btn) => {
-//     btn.addEventListener('click',(e) => {
-//         menu.classList.toggle('menu-active'); // Adiciona ou remove a classe menu-active
-//     });
-// });
 
 // Fechar menu ao clicar em um link
 about.addEventListener('click',(e) => {
     menu.classList.remove('menu-active'); 
 });
-
-contact.addEventListener('click',(e) => {
-    menu.classList.remove('menu-active');
-});
-
-header.addEventListener('click',(e) => {   
-    menu.classList.remove('menu-active');
-});
-
-team.addEventListener('click',(e) => {
-    menu.classList.remove('menu-active');
-});
-
-expertise.addEventListener('click',(e) => {
-    menu.classList.remove('menu-active');
-});
-
-
-
-
 
 // Inicialização do slides
 showSlides();

@@ -5,7 +5,8 @@
   --secondary-color: #868686;
   --tertiary-color: #eff3f4;
   --secondary-bg-color: #5c1011;
- 
+}
+
 * {
   font-family: "Lato";
   padding: 0;
@@ -95,7 +96,11 @@ i {
   position: absolute;
   left: 20px;
   top: 40px;
-  z-index: 1;
+  z-index: 0; 
+}
+
+.square p {
+  z-index: 0;
 }
  
 .dots {
@@ -268,6 +273,8 @@ i {
   text-transform: uppercase;
 }
 /* ******** */
+
+
 /* Depoimentos */
 #testimonial {
   display: flex;
@@ -484,9 +491,6 @@ i {
   color: var(--secondary-color);
 }
  
-/* FIM DO RODAPÉ */
- 
-/*  MOBILE NAVBAR  */
  
 #menu,
 #close-menu {
